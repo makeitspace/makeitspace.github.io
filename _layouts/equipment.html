@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<div class="equipment-page">
+    <h1>{{ page.name }}</h1>
+
+    <img src="{{ page.picture }}" alt="Picture of {{ page.name }}" class="equipment-image">
+
+    <p class="description">{{ page.description }}</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Rate</strong></td>
+                <td>
+                    <span class="label
+                        {% if page.rate == 'Green' %}label-green{% endif %}
+                        {% if page.rate == 'Amber' %}label-yellow{% endif %}
+                        {% if page.rate == 'Red' %}label-red{% endif %}">
+                        {{ page.rate }}
+                    </span>
+                </td>
+            </tr>
+            {% if page.manual %}
+            <tr>
+                <td><strong>Manual</strong></td>
+                <td>
+                    <a href="{{ page.manual }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View Manual</a>
+                </td>
+            </tr>
+            {% endif %}
+            {% if page.sop %}
+            <tr>
+                <td><strong>Safe Operating Procedures</strong></td>
+                <td>
+                    <a href="{{ page.sop }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View SOP</a>
+                </td>
+            </tr>
+            {% endif %}
+            {% if page.materials %}
+            <tr>
+                <td><strong>Approved Materials</strong></td>
+                <td>
+                    {{ page.materials | join: ", " }}
+                </td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    {% if page.resources %}
+    <h2>Additional Resources</h2>
+    <ul>
+        {% for resource in page.resources %}
+        <li>
+            <a href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">{{ resource.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+
+<style>
+    /* Custom styles to enhance visuals */
+    .equipment-image {
+        display: block;
+        margin: 1rem auto;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+</style>
