@@ -8,13 +8,32 @@ name: Makerbot Sketch Large
 qty: 2
 picture: /data/productpictures/makerbotsketch.jpg
 description: |
-  A versatile machine for cutting and engraving materials such as wood, acrylic, and leather.
+  Makerbot Sketch Large enclosed 3d Printer.
+  Print large classroom projects without compromising on size.
+  
+  Working area 220mm x 200mm x 250mm
+  Design Software in use Tinkercad, Blender, FreeCAD.
+  Slicer Software in use Cura Slicer - MakerBot SKETCH Large Profile inbuilt.
 rate: Amber
 manual: /data/equipment/MakerBot_SKETCH_Large/Sketch-Large-manual-2022-10-17.pdf
 sop: https://example.com/laser-cutter-sop
+materials:
+  - 1.75mm filaments
+  - PLA 
+  - ABS
+  - PETG 
+  - PA 
+  - Flex 
+
 resources:
-  - title: Laser Cutting Basics
-    link: https://example.com/laser-cutting-basics
-  - title: Advanced Engraving Techniques
-    link: https://example.com/advanced-engraving
+  - title: Makerbot Sketch Large
+    link: https://www.makerbot.com/3d-printers/sketch-large/
+  - title: Tinkercad
+    link: https://www.tinkercad.com/
+  - title: Blender
+    link: https://www.blender.org/
+  - title: FreeCAD
+    link: https://www.freecad.org/
+  - title: Cura Slicer
+    link: https://ultimaker.com/software/ultimaker-cura/
 ---

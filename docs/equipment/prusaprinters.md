@@ -8,7 +8,11 @@ picture: /data/productpictures/prusa.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |
-  description here
+  Prusa i3 MK3 3D Printer.
+  
+  Working area 250mm x 221mm x 221mm
+  Design Software in use Tinkercad, Blender, FreeCAD.
+  Slicer Software in use Cura Slicer - Prusa i3 MK3 Profile inbuilt.
 
 # Equipment attributes
 rate: Amber
@@ -26,6 +30,16 @@ materials:
   - PETG 
   - PA 
   - Flex 
-
-
+  
+resources:
+  - title: Prusa3d
+    link: https://www.prusa3d.com/
+  - title: Tinkercad
+    link: https://www.tinkercad.com/
+  - title: Blender
+    link: https://www.blender.org/
+  - title: FreeCAD
+    link: https://www.freecad.org/
+  - title: Cura Slicer
+    link: https://ultimaker.com/software/ultimaker-cura/
 ---

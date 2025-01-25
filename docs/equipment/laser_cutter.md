@@ -6,10 +6,11 @@ name: Laser Cutter
 parent: Equipment
 picture: /assets/equipmentphotos/lasercutter.jpg
 description: |
-  Redsail_RS80_5070
-  Working Area 500 x 700mm
+  Redsail RS80_5070
   A versatile machine for cutting and engraving materials such as wood, acrylic, and leather.
-  Design Software in use Inkscape.
+  
+  Working Area 500mm x 700mm.
+  Design Software in use Inkscape, FreeCAD.
   Driver Software in use LightBurn.
 rate: Red
 qty: 1
@@ -27,7 +28,7 @@ materials:
 resources:
   - title: Inkscape
     link: https://inkscape.org/
-  - title: Inkscape Template 
+  - title: Inkscape Redsail_RS80_5070 Template 
     link: /data/equipment/Redsail_RS80_5070_laser_cutter/RS80-5070_Laser_Cutter_IS_V1.svg
   - title: LightBurn
     link: https://lightburnsoftware.com/
@@ -37,4 +38,6 @@ resources:
     link: /data/equipment/Redsail_RS80_5070_laser_cutter/RS-80-5070_Default_No_Connection.lbdev
   - title: LightBurn Redsail RS80 5070 Device Profile - USB Connection
     link: /data/equipment/Redsail_RS80_5070_laser_cutter/RS-80-5070_USB_Connection.lbdev
+  - title: FreeCAD
+    link: https://www.freecad.org/
 ---
