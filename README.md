@@ -1,174 +1,105 @@
-# just-the-docs-template
+# Make It Space Wiki
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+Welcome to the **Make It Space Wiki** repository. This repository contains all the resources, templates, and instructions to document and manage equipment for the Make It Space project. Below, you'll find detailed instructions on creating new equipment pages, using templates, and working with the repository structure.
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+This project uses the **Just the Docs** template, which is a clean, customizable, and responsive documentation theme for Jekyll. For more information, visit the [Just the Docs website](https://just-the-docs.com/). If you need additional help with Jekyll, refer to the [official Jekyll documentation](https://jekyllrb.com/).
 
-More specifically, the created site:
+---
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+## **Creating a New Equipment Item**
 
-To get started with creating a site, simply:
+To add a new equipment item to the Wiki:
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+1. **Start with the Template:**
+   - Navigate to the `_equipment` directory.
+   - Copy the `templatefrontmatter.md` file and rename it to match your new equipment name, e.g., `LaserCutter.md`.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+2. **Fill Out the Front Matter:**
+   Update the front matter of your new file with the following fields:
 
-After completing the creation of your new site on GitHub, update it as needed:
+   ```yaml
+   ---
+   layout: equipment
+   title: [Equipment Name]
+   permalink: /docs/equipment/[equipment_slug]/
+   name: [Equipment Name]
+   parent: Equipment
+   picture: /data/productpictures/[image_name].jpg
+   description: |
+     [Detailed description of the equipment]
+   rate: [Green/Amber/Red]
+   qty: [Number of items available]
+   manual: [Link to manual or "/data/equipment/manual.pdf"]
+   sop: [Link to SOP or "/data/safety/sop.pdf"]
+   materials:
+     - [Material 1]
+     - [Material 2]
+   resources:
+     - title: [Resource Title]
+       link: [Resource Link]
+   ---
+   ```
 
-## Replace the content of the template pages
+3. **Save Pictures and Documents:**
+   - Save equipment pictures in `/data/productpictures`.
+   - Save SOPs in `/data/safety`.
+   - If manuals are not available online, upload them to `/data/equipment`.
 
-Update the following files to your own content:
+4. **Verify the Page:**
+   - Add your new equipment file to the `docs/equipment/` directory.
+   - Run the development server locally to preview changes:
+     ```bash
+     bundle exec jekyll serve
+     ```
+   - Access the site at `http://127.0.0.1:4000/` and verify your equipment page is listed under the **Equipment Index**.
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+---
 
-## Changing the version of the theme and/or Jekyll
+## **Tracking Changes**
 
-Simply edit the relevant line(s) in the `Gemfile`.
+We are using the following spreadsheet to track the progress of equipment documentation:
+[Equipment Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/1gl224OAmsTvoBz5uktKIdwRRtR62sBOruspWH7qHvdM/edit?usp=sharing)
 
-## Adding a plugin
+### Spreadsheet Legend:
+- **Orange Rows:** Someone else is working on this item. Ensure you have checked the spreadsheet and clicked the item before making changes.
+- **Green Rows:** The page is complete and contains all required information.
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+---
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+## **Development Workflow**
 
-- Add the following to your site's `Gemfile`:
+To manage unconfirmed pages or changes:
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+1. **Use the Development Branch:**
+   - Always push new or unverified changes to the `development` branch.
+   - Create a new branch from `development` for larger edits.
 
-- And add the following to your site's `_config.yml`:
+   ```bash
+   git checkout development
+   git checkout -b feature/[new-feature-name]
+   ```
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+2. **Test Your Changes:**
+   - Preview the site locally using:
+     ```bash
+     bundle exec jekyll serve
+     ```
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+3. **Submit a Pull Request:**
+   - Once changes are verified, submit a pull request to merge into the `main` branch.
 
-## Publishing your site on GitHub Pages
+4. **Deployment:**
+   - The `main` branch triggers automatic deployment and updates the live site.
+   - Only the **MIS Officer** has permission to merge changes into `main`.
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
+---
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
+## **File and Directory Structure**
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+- **Equipment Pages:** `_equipment/`
+- **Pictures:** `/data/productpictures/`
+- **SOPs:** `/data/safety/`
+- **Manuals:** `/data/equipment/`
 
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
+---
 
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
