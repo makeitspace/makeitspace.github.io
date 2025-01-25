@@ -1,0 +1,51 @@
+{
+    "DeviceList": [
+        {
+            "Checklist": "",
+            "DefaultCutList": [
+            ],
+            "DefaultToolCutList": [
+            ],
+            "DisplayName": "RS-80-5070 Default - No Connection",
+            "EnableLaser2Offset": false,
+            "EnableProcessOffset": false,
+            "GUID": "JiLTMxZDFk",
+            "Height": 500,
+            "HomeOnStartup": false,
+            "Info": "",
+            "Laser2OffsetX": 0,
+            "Laser2OffsetY": 0,
+            "LastCamera": "",
+            "LastDevLibraryPath": "",
+            "MirrorX": true,
+            "MirrorY": true,
+            "Name": "No Machine",
+            "ProcessOffsetX": 0,
+            "ProcessOffsetY": 0,
+            "ProfilePath": "No Machine",
+            "ReverseIntervalCompensation": false,
+            "Settings": {
+                "ClickSelTolerance": 3,
+                "DockState_ArtBrowser": false,
+                "DockState_Camera": false,
+                "DockState_Console": false,
+                "DockState_CutLibrary": true,
+                "DockState_LaserFiles": true,
+                "DockState_Move": false,
+                "DockState_ShapeProperties": false,
+                "DockState_VariableText": false,
+                "GridShade": 224,
+                "GridSnap": 1,
+                "GridSnapEnabled": true,
+                "GridSpacing": 10,
+                "ObjSnap": 10,
+                "ObjSnapEnabled": true,
+                "Units": 0,
+                "UserFinishX": 0,
+                "UserFinishY": 0
+            },
+            "Type": "None",
+            "Width": 700
+        }
+    ]
+}
