@@ -1,0 +1,41 @@
+- title: Laser Cutting Basics
+  link: https://example.com/laser-cutting-basics
+  category:
+    - Laser
+    - Fabrication
+  type: Tutorial
+
+- title: Advanced Engraving Techniques
+  link: https://example.com/advanced-engraving
+  category:
+    - Laser
+    - Design
+  type: Tutorial
+
+- title: Arduino IDE
+  link: https://www.arduino.cc/en/software
+  category:
+    - Electronics
+    - Robotics
+  type: Software
+
+- title: 3D Printing Tips
+  link: https://example.com/3d-printing-tips
+  category:
+    - 3D Printing
+    - 3D Modelling
+  type: Tutorial
+
+- title: SVG to DXF Converter
+  link: https://example.com/svg-to-dxf
+  category:
+    - Conversion Tools
+    - Design
+  type: Tool
+
+- title: Free SVG Resources
+  link: https://example.com/free-svgs
+  category:
+    - Design
+    - Templates
+  type: Resource

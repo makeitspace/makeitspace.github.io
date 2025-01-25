@@ -1,0 +1,149 @@
+---
+layout: default
+title: Resources
+permalink: /resources/
+nav_order: 3
+---
+
+<h1>Resources</h1>
+
+<!-- Filters -->
+<div>
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        {% assign categories = site.data.resources | map: "category" | flatten | uniq %}
+        {% for category in categories %}
+        <option value="{{ category }}">{{ category }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="typeFilter">Filter by Type:</label>
+    <select id="typeFilter">
+        <option value="all">All Types</option>
+        {% assign types = site.data.resources | map: "type" | uniq %}
+        {% for type in types %}
+        <option value="{{ type }}">{{ type }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- Resources List -->
+<div id="resourcesList" class="resource-grid">
+    {% for resource in site.data.resources %}
+    <div class="resource-item" data-category="{{ resource.category | join: ',' }}" data-type="{{ resource.type }}">
+        <h2>{{ resource.title }}</h2>
+        <p>
+            <strong>Categories:</strong>
+            {% for category in resource.category %}
+            <span class="label label--info">{{ category }}</span>
+            {% endfor %}<br>
+            <strong>Type:</strong> {{ resource.type }}
+        </p>
+        <div class="btn-container">
+            <a href="{{ resource.link }}" class="btn btn-blue" target="_blank" rel="noopener noreferrer">More Info</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- JavaScript for Filtering -->
+<script>
+    const categoryFilter = document.getElementById('categoryFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const resourcesList = document.querySelectorAll('.resource-item');
+
+    function filterResources() {
+        const selectedCategory = categoryFilter.value.toLowerCase();
+        const selectedType = typeFilter.value.toLowerCase();
+
+        resourcesList.forEach(resource => {
+            const resourceCategories = resource.dataset.category
+                ? resource.dataset.category.toLowerCase().split(',')
+                : [];
+            const resourceType = resource.dataset.type
+                ? resource.dataset.type.toLowerCase()
+                : '';
+
+            const categoryMatch = selectedCategory === 'all' || resourceCategories.includes(selectedCategory);
+            const typeMatch = selectedType === 'all' || resourceType === selectedType;
+
+            resource.style.display = categoryMatch && typeMatch ? 'block' : 'none';
+        });
+    }
+
+    categoryFilter.addEventListener('change', filterResources);
+    typeFilter.addEventListener('change', filterResources);
+</script>
+
+<!-- Styling -->
+<style>
+    .resource-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 1.5rem; /* Space between resource items */
+        margin-top: 2rem;
+    }
+
+    .resource-item {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: space-between; /* Push button to the bottom */
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .resource-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .resource-item h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            margin-top:0;
+        }
+
+        .resource-item p {
+            margin-bottom: auto; /* Ensure space above button */
+        }
+
+        .resource-item .btn {
+            align-self: flex-end; /* Align button to the bottom-right */
+            margin-top: 1rem; /* Add spacing above the button */
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #fff;
+            background-color: #6f42c1;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+            .resource-item .btn:hover {
+                background-color: #5936a2;
+            }
+
+    .label {
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: flex-end; /* Align the button to the right */
+        margin-top: 1rem; /* Add spacing above the button */
+    }
+
+</style>
