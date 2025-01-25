@@ -4,7 +4,7 @@ title:  Prusa i3 MK3 3D Printer
 permalink: /docs/equipment/prusa3dprinter/
 name:  Prusa i3 MK3
 parent: Equipment
-picture: /data/equipment/Prusa_i3_MK3S/prusa.jpg
+picture: /data/productpictures/prusa.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |

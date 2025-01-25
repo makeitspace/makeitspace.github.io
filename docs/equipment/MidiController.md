@@ -4,7 +4,7 @@ title: Midi Keyboard
 permalink: /docs/equipment/midikeyboard/
 name: LaunchKey Midi Keyboard
 parent: Equipment
-
+picture: /data/productpictures/midikeyboard.jpg
 # Description: Preserve newlines with the pipe (`|`)
 description: |
 

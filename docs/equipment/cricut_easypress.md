@@ -4,7 +4,7 @@ title: Cricut Easy Press
 permalink: /docs/equipment/cricut_easy_press/
 name: Cricut Easy Press
 parent: Equipment
-picture: /data/equipment/Cricut/Cricut.jpg
+picture: /data/productpictures/easypress.jpg
 description: |
   description here
 rate: Green

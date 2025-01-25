@@ -4,7 +4,7 @@ title: Micro:Bit V2.2
 permalink: /docs/equipment/microbitboards/
 name: Micro:Bit V2.2 
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/microbit.jpg
 description: |
   description here
 rate: Green

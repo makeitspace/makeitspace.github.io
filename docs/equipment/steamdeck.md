@@ -4,7 +4,7 @@ title: Stream Deck Elgato MK.2
 permalink: /docs/equipment/steamdeck/
 name: Stream Deck Elgato MK.2
 parent: Equipment
-
+picture: /data/productpictures/streamdeck.jpg
 # Description: Preserve newlines with the pipe (`|`)
 description: |
 15 Customisable LCD Keys: Instantly control your apps, tools and platforms

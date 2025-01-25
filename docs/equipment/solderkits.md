@@ -4,7 +4,7 @@ title: Electronics/Solder Kits
 permalink: /docs/equipment/solderkits/
 name: Electronics/Solder Kits
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/solderkit.jpg
 description: |
   Soldering Iron Electronics Kit. Includes: soldering iron, multimeter, asst. tools
   Fume extractors and helping hands also available

@@ -4,7 +4,7 @@ title: Electronics Workbench
 permalink: /docs/equipment/electronics_workbench/
 name: Electronics Workbench
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/electronicsbench.jpg
 description: |
   Soldering iron - 70W Weller
   Regulated power supply - Powertech MP3840

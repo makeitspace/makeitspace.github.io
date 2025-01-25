@@ -4,7 +4,7 @@ title: RaspberryPi Kits
 permalink: /docs/equipment/raspberrypikits/
 name: RaspberryPi Kits
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/raspberrypi.jpg
 description: |
   Comes with RP4 Model B, power supply, breakout board and hdmi adapter. Keyboards, mice and monitors also available.
 rate: Green

@@ -4,7 +4,7 @@ title: CNC Router
 permalink: /docs/equipment/cnc_router/
 name: Laser Cutter
 parent: Equipment
-picture: /data/equipment/Toughcut_SAPPHIRE_TC6090/TC6090_1.jpg
+picture: /data/productpictures/cnc.jpg
 description: |
    Sapphire TC6090
    work area 600 x 900mm

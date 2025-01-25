@@ -4,7 +4,7 @@ title: Electronics Sensor Kit
 permalink: /docs/equipment/sensorkit/
 name: Electronics Sensor Kit
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/sensorkit.jpg
 description: |
   Note: does not come with microcontroller (arduino, pi etc)
 rate: Green

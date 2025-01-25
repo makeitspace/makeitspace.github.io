@@ -4,6 +4,7 @@ title: Podcast Kit AT2020
 permalink: /docs/equipment/podcastkit/
 name: Podcast Kit AT2020
 parent: Equipment
+picture: /data/productpictures/podcastkit.jpg
 description: |
   Includes: USB Condenser Microphone, headphones, boom arm and mounts
 rate: Green

@@ -6,7 +6,7 @@ nav_exclude: false
 parent: Equipment
 name: Makerbot Sketch Large
 qty: 2
-picture: /data/equipment/MakerBot_SKETCH_Large/Roxie.jpg
+picture: /data/productpictures/makerbotsketch.jpg
 description: |
   A versatile machine for cutting and engraving materials such as wood, acrylic, and leather.
 rate: Amber

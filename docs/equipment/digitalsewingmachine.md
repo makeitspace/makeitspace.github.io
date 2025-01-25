@@ -4,7 +4,7 @@ title:  Sewing Machine  Janome MyExcel
 permalink: /docs/equipment/mechanicalsewingmachine/
 name:  Sewing Machine  Janome MyExcel 
 parent: Equipment
-
+picture: /data/productpictures/digitaldewingmachine.jpg
 # Description: Preserve newlines with the pipe (`|`)
 description: |
   description here

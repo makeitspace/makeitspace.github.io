@@ -4,7 +4,7 @@ title: Workshop Workbench
 permalink: /docs/equipment/workshop_workbench/
 name: Workshop Workbench
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /assets/equipmentphotos/electronicsbench.jpg
 description: |
   Dremel tool - 4000 series. Includes 50-piece accessory set & drill press workstation 
   Cordless drill - Ryobi RPD18C 

@@ -4,7 +4,7 @@ title: Template
 permalink: /docs/equipment/template/
 name: Template
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/learningkit.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |

@@ -4,7 +4,7 @@ title: Electronics Learning Kits
 permalink: /docs/equipment/electronicslearningkit/
 name: Keyestudio Learning Kit for Arduino 
 parent: Equipment
-picture: /assets/equipmentphotos/lasercutter.jpg
+picture: /data/productpictures/learningkit.jpg
 description: |
   Note: does not come with microcontroller (arduino, pi etc)
 rate: Green

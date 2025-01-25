@@ -4,7 +4,7 @@ title:  Sewing Machine Janome DC2030
 permalink: /docs/equipment/digitalsewingmachine/
 name:  Sewing Machine Janome DC2030 
 parent: Equipment
-
+picture: /data/productpictures/mechanicalsewingmachine.jpg
 # Description: Preserve newlines with the pipe (`|`)
 description: |
   description here
