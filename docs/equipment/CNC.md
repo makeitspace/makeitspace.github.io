@@ -7,9 +7,9 @@ parent: Equipment
 picture: /data/productpictures/cnc.jpg
 description: 
    Sapphire TC6090
-   work area 600 x 900mm
-   Design Software in use Vectric - Vcarve Pro
-   Driver Software in use Artsoft - Mach3
+   Working area 600 x 900mm
+   Design Software in use Vectric - Vcarve Pro.
+   Driver Software in use Artsoft - Mach3.
 rate: Red
 qty: 1
 manual: /data/equipment/Toughcut_SAPPHIRE_TC6090/Mach3Mill_Install_Config.pdf
