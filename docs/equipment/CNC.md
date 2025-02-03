@@ -31,10 +31,14 @@ resources:
     link: https://www.vectric.com/support/tutorials/vcarve-desktop/?
   - title: Vectric - Vcarve Pro Machine Configuration
     link: /data/equipment/Toughcut_SAPPHIRE_TC6090/Machine_Config.png
-    - title: Artsoft - Mach3
+  - title: Artsoft - Mach3
     link: https://www.machsupport.com/software/mach3/
   - title: Artsoft - Mach3 Tutorials
     link: https://www.youtube.com/watch?v=R3futACR6dM&list=PLiujh-9NlGVZMMy1dBTM7iZbmHUxO7K-u
   - title: Artsoft - Mach3 Keyboard Short Cut keys 
     link: /data/equipment/Toughcut_SAPPHIRE_TC6090/keyboard_shortcuts.jpg
+  - title: James Dean Designs CNC Tutorials
+    link: https://jamesdeandesigns.com/
+  - title: James Dean Designs YouTube Chanel 
+    link: https://www.youtube.com/@JamesDeanDesigns
 ---
