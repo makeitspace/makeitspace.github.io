@@ -70,6 +70,9 @@ nav:
     url: /
   - title: Equipment
     url: /docs/equipment/
+  - title: Membership
+    url: /membership/
+
 
 # External navigation links
 nav_external_links:
@@ -81,4 +84,8 @@ nav_external_links:
     url: https://www.dardanup.wa.gov.au/documents/308/shire-of-dardanup-mick-bennett-make-it-space-terms-of-use
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
-  
+  - title: FAQ
+    url: https://www.dardanup.wa.gov.au/our-community/library/mick-bennett-make-it-space/mbmis-faq.aspx
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+    opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
+
