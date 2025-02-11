@@ -4,6 +4,7 @@ title: LED lights
 permalink: /docs/equipment/ledlights/
 name: LED lights
 parent: Equipment
+picture: /data/productpictures/lights.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |

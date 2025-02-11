@@ -4,6 +4,7 @@ title: Green Screen
 permalink: /docs/equipment/green_screen/
 name:  Green Screen 200 x 180cm
 parent: Equipment
+picture: /data/productpictures/greenscreen.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |

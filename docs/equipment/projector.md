@@ -4,6 +4,7 @@ title: Projector
 permalink: /docs/equipment/Projector/
 name: Projector Nebula Capsule D4111
 parent: Equipment
+picture: /data/productpictures/projector.jpg
 
 # Description: Preserve newlines with the pipe (`|`)
 description: |

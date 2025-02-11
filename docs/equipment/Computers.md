@@ -4,6 +4,7 @@ title: Computers
 permalink: /docs/equipment/computers/
 name: Computers
 parent: Equipment
+picture: /data/productpictures/computer.jpg
 
 description: |
   - 4 x Desktop PCs - Intel i5-13400 10 Core, running Arch Linux and Windows 11.
